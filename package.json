@@ -7,7 +7,8 @@
   "scripts": {
     "start": "babel-node ./app.js",
     "test": "jest",
-    "build": "echo Test build completed! No package was uploaded"
+    "build": "echo Test build completed! No package was uploaded",
+    "sonar": "babel-node ./sonar-scanner.js"
   },
   "repository": {
     "type": "git",
@@ -29,10 +30,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset": "^1.1.7",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^16.1.4",
     "express": "^4.17.1",
     "jest": "^27.0.3"
   },
   "engines": {
     "node": "16.x"
+  },
+  "devDependencies": {
+    "sonarqube-scanner": "^3.0.1"
   }
 }
